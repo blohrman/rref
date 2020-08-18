@@ -1,0 +1,50 @@
+old functions from RowReduction in case they become relevant again lmao
+
+        // checks if swapping a row will produce a one
+//        if (toReduce[currRow][currCol] == 1) {
+//            // be happy
+//        } else {
+//            int nextRow = currRow + 1;
+//            List<Integer> rowNums = new ArrayList<>();
+//            for (int i = nextRow; i < toReduce[currRow].length; i++) {
+//                if (toReduce[i][currCol] == 1) {
+//                    swapRow(toReduce, currRow, nextRow);
+//                    break;
+//                } else {
+//                    rowNums.add(toReduce[i][currCol]);
+//                }
+//            }
+//
+//            // add functionality to check if adding two rows will lead to a one
+//
+//            if (toReduce[currRow][currCol] == 1) {
+//                // be happy
+//            } else {
+//
+//            }
+//
+//            // checks if scaling a row will produce a one forwards and backwards
+//            if (toReduce[currRow][currCol] == 1) {
+//                // be happy
+//            } else {
+//                for (int i = 0; i < rowNums.size(); i++) {
+//                    if (toReduce[currRow][currCol] % rowNums.get(i) == 0) {
+//                        scaleRow(toReduce, currRow, (1 / rowNums.get(i)));
+//                        break;
+//                    } else if (rowNums.get(i) % toReduce[currRow][currCol] == 0){
+//                        // i - 1 accounts for the fact that rowNums excludes
+//                        // first row in iteration
+//                        swapRow(toReduce, currRow, i - 1);
+//                        scaleRow(toReduce, currRow, (1 / rowNums.get(i)));
+//                        break;
+//                    }
+//                }
+//            }
+//
+//            // worst case, multiply the first row by 1/(first num), deal with nastiness
+//            if (toReduce[currRow][currCol] == 1) {
+//                // be happy
+//            } else {
+//                scaleRow(toReduce, currRow, (1 / toReduce[currRow][currCol]));
+//            }
+//        }
